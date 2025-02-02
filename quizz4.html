@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Xiaomi</title>
+  <style>
+    body {
+      background-color: #F5F5F5;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      position: relative;
+      border-radius: 9px;
+      width: 90%;
+      max-width: 500px;
+      margin: 30% auto;
+      background-color: #fff;
+      padding: 30px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    img {
+      position: relative;
+      width: 99%;
+      border-radius: 5px;
+      left: 1%;
+    }
+
+    p {
+      font-size: 25px;
+      margin: 15px 0;
+      text-align: center;
+    }
+
+    .butt {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    button {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 19px;
+      background-color: #33333333;
+    }
+
+    button:hover {
+      opacity: 0.9;
+      transition: 0.4s;
+      background-color: #FF6700 ;
+    }
+
+    .confirm {
+      background-color: #FF6700;
+      color: white;
+    }
+    .nave{
+      background-color: #FF6700;
+      margin-top: -1px;
+      padding: 0px;
+      position: fixed;
+      color: #fff;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      
+    }
+    .text-xiome{
+      position: relative;
+      left: 4%;
+      font-family: Sans-Serif;
+    }
+  </style>
+</head>
+<body>  
+<div class="nave">
+  <nav>
+    <h2 class="text-xiome">xiome</h2>
+  </nav>
+</div>
+<div class="container">
+    <img src="https://i.postimg.cc/5yCGmPtm/13-pro-2-65aef2baeb3f2.jpg" alt="Celular Xiaomi">
+    <p>Na sua opinião, qual é o maior diferencial dos celulares Xiaomi?
+</p>
+    <div class="butt">
+      <button>Melhor custo-benefício
+</button>
+      <button>Tecnologia inovadora</button>
+      <button>Boa durabilidade
+</button>
+      <button>Customização e MIUI</button>
+      <button class="confirm" onclick="confirmarResposta()">Confirmar a pergunta</button>
+    </div>
+</div>
+
+<script>
+  function confirmarResposta() {
+    alert("Sua resposta foi confirmada!");
+    
+    // Redireciona para outro quiz
+    window.location.href = "quizz5.html";
+  }
+</script>
+  </script>
+</body>
+</html>

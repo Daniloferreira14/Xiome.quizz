@@ -1,0 +1,141 @@
+<!DOCTEPY html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }body {
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}.container { position: relative; margin-left: -1px; background: white; padding: 100px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); width: 100%; max-width: 550px; margin-bottom: 20px; text-align:center; }
+
+.text { position: absolute; margin-top: -80px; margin-left: -60px; text-align: left; font-size: 23px; font-weight: bold; color: #333; margin-bottom: 10px; }
+
+.form-group { display: flex; flex-direction: column; margin-bottom: 15px; text-align: left; }
+
+label { position: relative; margin-left: -60px; font-size: 14px; font-weight: bold; color: #666666;; margin-bottom: 5px; font-size: 19px; }
+
+input { position: relative; margin-left: -60px; width: 140%; padding: 20px; border: 1px solid #ccc; border-radius: 5px; font-size: 16px; outline: none; }
+
+.submit-container { text-align: center; margin-top: 10px; }
+
+button { position: relative; margin-left: -1px; width: 100%; background: #ff6900; color: white; border: none; padding: 20px; cursor: pointer; border-radius: 5px; font-size: 19px; }
+
+button:hover { background: #cc0000; } .palagrafo{ position: absolute; margin-top: -40px; margin-left: -60px; text-align: left; font-size: 18px; font-weight: bold; color: #666666; margin-bottom: 10px; } .aaa{ color:blue; } .palagrafo1{ position: absolute; margin-top: -20px; margin-left: -60px; text-align: left; font-size: 20px; font-weight: bold; color: #666666; margin-bottom: 10px; width: 100%; /* Garantir que ocupe toda a largura disponível / max-width: 800px; / Limitar a largura máxima / word-wrap: break-word; / Quebrar a linha quando o texto for longo */ }
+
+}
+.texto-p{ position: relative; margin-top: -20px; margin-left: -70px; text-align: left; font-size: 20px; font-weight: bold; color: #666666; margin-bottom: 10px; width: 190%; max-width: 900px; word-wrap: break-word;
+
+} .text-pp{ font-size: 20px; margin-left: -60px; text-align: left; font-size: 20px; font-weight: bold; color: #666666; margin-bottom: 10px; width: 100%; max-width: 800px; word-wrap: break-word; }
+
+.palagrafo1{
+  position: relative;
+  margin-left: 70px;
+  font-size: 20px;
+  font-size: 20px; margin-left: -6px; text-align: left; font-size: 20px; font-weight: bold; color: #666666; margin-bottom: 10px; width: 130%; max-width: 900px; word-wrap: break-word; }
+
+}
+.container1{
+      margin-top: 40px;
+      background-color: #666;
+      padding: 70px;
+      text-align: center;
+}
+  </style>
+</head>
+<body>  
+  <form id="formulario">
+    <!-- Primeiro Formulário -->
+    <div class="container">
+      <h2 class="text">Identificação</h2>
+      <div class="form-group">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+      </div><div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+      </div><div class="form-group">
+    <label for="telefone">Telefone</label>
+    <input type="tel" id="telefone" name="telefone" placeholder="(99) 9999-9999">
+  </div>
+
+  <div class="form-group">
+    <label for="cpf">CPF</label>
+    <input type="number" id="cpf" name="cpf" placeholder="000.000.000-00">
+  </div>
+</div>
+
+<!-- Segundo Formulário -->
+<div class="container">
+  <h2 class="text">Entregar</h2>
+  <p class="palagrafo">Outra pessoa irá receber o pedido? <a href="dcosta7338@gmail.com" class="aaa">clica aqui</a></p>
+  <br>
+  <div class="form-group">
+    <label for="endereco">CEP</label>
+    <input type="number" id="endereco" placeholder="12347-000">
+  </div>
+  <br></b>
+  <div class="text-pp">
+  <p class="palagrafo1">Escolha o melhor frete para você</p>
+  <br>
+  <p class="palagrafo1">Preencha seu CEP para encontrar o melhor frete</p>
+  </div>
+</div>
+
+<!-- Botão único para enviar tudo -->
+<div class="submit-container">
+  <button type="submit" id="btnEnviar" disabled>Enviar</button>
+</div>
+  </form>
+  <br>
+  <div class="container">
+    <h2>forma de pagamentos</h2>
+    <img width="48" height="48" src="https://img.icons8.com/color/48/visa.png" alt="visa"/>
+    <img width="48" height="48" src="https://img.icons8.com/color/48/mastercard.png" alt="mastercard"/>
+    <img width="50" height="50" src="https://img.icons8.com/ios/50/credit-card-front.png" alt="credit-card-front"/>
+    <img width="48" height="48" src="https://img.icons8.com/color/48/boleto-bankario.png" alt="boleto-bankario"/>
+    <img width="48" height="48" src="https://img.icons8.com/fluency/48/pix.png" alt="pix"/>
+  </div>
+  </div>
+    <footer class="container1"> 
+    <p>© 2025 Xiome. Todos os direitos reservados.</p>
+    </footer>
+    
+  <script>
+    // Função para ativar o botão quando todos os campos estiverem preenchidos
+    document.getElementById("formulario").addEventListener("input", function() {
+      const nome = document.getElementById("nome").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const telefone = document.getElementById("telefone").value.trim();
+      const cpf = document.getElementById("cpf").value.trim();
+      const endereco = document.getElementById("endereco").value.trim();
+
+      // Verificar se todos os campos estão preenchidos
+      if (nome && email && telefone && cpf && endereco) {
+        document.getElementById("btnEnviar").disabled = false; // Habilitar o botão
+      } else {
+        document.getElementById("btnEnviar").disabled = true; // Desabilitar o botão
+      }
+    });
+
+    // Função de redirecionamento quando o formulário for enviado
+    document.getElementById("formulario").addEventListener("submit", function(event) {
+      event.preventDefault(); // Impede o envio do formulário
+      
+      // Redirecionar para outra página
+      window.location.href = "https://wa.me/559896099309?text=olá+tudo+bem+tenho+interesse+de+levantar+um+caixa+na+loja+quizz"; // Substitua "outra_pagina.html" pelo endereço desejado
+    });
+  </script>
+  </body>
+</html> 
